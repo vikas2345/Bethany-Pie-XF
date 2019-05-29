@@ -1,4 +1,5 @@
 ﻿using System;
+using BethanyPie.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,8 @@ namespace BethanyPie
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new ContentPageView();
+            MainPage = new NavigationPage(new CarouselPageView());
         }
 
         protected override void OnStart()

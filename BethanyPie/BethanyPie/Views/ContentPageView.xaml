@@ -2,16 +2,52 @@
 <ContentPage
     x:Class="BethanyPie.Views.ContentPageView"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    BackgroundImage="patternwide"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImage="patternwide">
     <ContentPage.Content>
-        <StackLayout>
 
-            <Image Source="icon" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
             <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+                Text="Welcome To Bethany's Pie Shop"
+                TextColor="Black" />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="UserName" />
+
+            <Entry
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="FillAndExpand"
+                Placeholder="Enter Your Username" />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Password" />
+
+            <Entry
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalOptions="FillAndExpand"
+                Placeholder="Enter Your Password" />
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
