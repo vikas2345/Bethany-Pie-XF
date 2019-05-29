@@ -1,14 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:BethanyPie"
-             x:Class="BethanyPie.MainPage">
+<ContentPage
+    x:Class="BethanyPie.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BethanyPie">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout x:Name="mainStackLayout">
+        <!--  Place new controls here  -->
+        <Label
+            FontSize="14"
+            HorizontalOptions="Center"
+            Text="Welcome to Bethany's Pie Shop"
+            VerticalOptions="CenterAndExpand" />
+
+        <Button
+            x:Name="DemoButton"
+            Margin="10"
+            Clicked="DemoButton_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="Click me and start the magic"
+            VerticalOptions="CenterAndExpand" />
+
+
+
     </StackLayout>
 
 </ContentPage>
